@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anniversary Gift</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      color: #fff;
+    }
+    h1, p {
+      margin: 0 0 20px 0;
+    }
+    button {
+      background-color: #e53935;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #d32f2f;
+      transform: scale(1.05);
+    }
+    .message-page {
+      display: none;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .message-page h1 {
+      font-size: 2.5rem;
+      color: #b71c1c;
+      margin-bottom: 20px;
+    }
+    .message-page p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="landingPage">
+    <h1>TO THE PERSON WHO MADE MY 6 MONTHS THE BEST TIME! 🎉</h1>
+    <p>Click the button below to see your special message.</p>
+    <button onclick="showMessage()">Click</button>
+  </div>
+
+  <div class="message-page" id="messagePage">
+    <h1>I LOVE YOUUUUUUU ♥♥♥</h1>
+    <p>
+      I Just want to say Thank you so much for coming into my life and making it very enjoyable and best..Im Glad that i have u in my life  u r literally that person who makes me smile , who makes my day the best , spending time with u is my favorite thing...thank you so much for making these 6 months very precious and im glad that we made it to 6 months and i want to continue it forever ... i m out of words but just know that i love you soooo muchh and i will always love u and only you even if u get tired of me i will love you in every situation and i think you of every single second u have a special space in my heart and i m glad that i met you...mwahhhh i love youuu soo muchh ♥♥💕
+    </p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('landingPage').style.display = 'none';
+      document.getElementById('messagePage').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
